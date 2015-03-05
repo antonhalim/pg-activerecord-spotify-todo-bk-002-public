@@ -65,4 +65,9 @@ SQL
 
 @db.exec(create_sql)
 
+insert_string = "INSERT INTO albums (artist, name) VALUES ($1, $2)"
+
+yeezus = ["Kanye West", "Yeezus"]
+
+@db.exec_params(insert_string, yeezus)
 ```
