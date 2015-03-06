@@ -1,6 +1,6 @@
 ---
-tags: sql, introductory, insert, todo
-languages: sql, ruby
+tags: activerecord, introductory, todo
+languages: ruby
 resources: 0
 ---
 
