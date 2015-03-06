@@ -7,6 +7,9 @@ gem 'pg'
 # Testing
 gem 'rspec'
 
+# Rake
+gem 'rake'
+
 # ORM
 gem 'activerecord'
 
