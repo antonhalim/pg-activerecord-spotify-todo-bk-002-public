@@ -7,5 +7,8 @@ gem 'pg'
 # Testing
 gem 'rspec'
 
+# ORM
+gem 'activerecord'
+
 # Debugging
 gem 'pry'
