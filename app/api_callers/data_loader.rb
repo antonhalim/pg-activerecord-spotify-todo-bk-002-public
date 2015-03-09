@@ -1,3 +1,4 @@
+require 'pry'
 class DataLoader
 
   attr_reader :data
@@ -11,15 +12,24 @@ class DataLoader
   end
 
   def extract_tracks
-    # code first
+    data["tracks"]
   end
-  
+
   def add_song_to_db(track)
-    # code second
+    song = Song.new(
+    :track_name => track["track_name"],
+    :artist => track["artist_name"],
+    :album => track["album_name"],
+    :url => track["track_url"],
+    :num_streams =>track["num_streams"] )
+    song.save
   end
-  
+
   def add_songs_to_db
-    # code third
+    songs = extract_tracks
+    songs.each do |song|
+      add_song_to_db(song)
+    end
   end
 
 end
